@@ -1,0 +1,131 @@
+{
+  "models": [
+    {
+      "arm": "baseline",
+      "name": "FluxAudio-S",
+      "parameters": "120M"
+    },
+    {
+      "arm": "musicgen",
+      "name": "MusicGen-S",
+      "parameters": "300M"
+    },
+    {
+      "arm": "ours",
+      "name": "MIDI-REPA L2",
+      "parameters": "120M"
+    }
+  ],
+  "clips": [
+    {
+      "id": "sdd_70",
+      "caption": "British indie song make from white dudes grown up listening to Franz Ferdinand",
+      "group": "SDD",
+      "audio": {
+        "baseline": "audio/sdd_70_baseline.wav",
+        "musicgen": "audio/sdd_70_musicgen.wav",
+        "ours": "audio/sdd_70_ours.wav"
+      }
+    },
+    {
+      "id": "attm_26",
+      "caption": "A smooth house track featuring a warm viola line, crisp electronic beats, and a subtle synth pad, drifting through a dreamy, introspective atmosphere with soft, ambient textures and a gentle pulse that lingers like a quiet memory.",
+      "group": "ATTM",
+      "audio": {
+        "baseline": "audio/attm_26_baseline.wav",
+        "musicgen": "audio/attm_26_musicgen.wav",
+        "ours": "audio/attm_26_ours.wav"
+      }
+    },
+    {
+      "id": "attm_33",
+      "caption": "A dreamy techno track driven by hypnotic percussion, layered with shimmering synth pads and a subtle electric bass, creating a floating, immersive atmosphere. The rhythm pulses gently, unfolding in smooth, flowing sequences that evoke a serene, otherworldly mood.",
+      "group": "ATTM",
+      "audio": {
+        "baseline": "audio/attm_33_baseline.wav",
+        "musicgen": "audio/attm_33_musicgen.wav",
+        "ours": "audio/attm_33_ours.wav"
+      }
+    },
+    {
+      "id": "attm_71",
+      "caption": "A scifi-themed score featuring a full orchestra, crafting an expansive, otherworldly atmosphere through rich orchestral textures and imaginative instrumentation.",
+      "group": "ATTM",
+      "audio": {
+        "baseline": "audio/attm_71_baseline.wav",
+        "musicgen": "audio/attm_71_musicgen.wav",
+        "ours": "audio/attm_71_ours.wav"
+      }
+    },
+    {
+      "id": "sdd_160",
+      "caption": "Instrumental lounge song, with an 80s sounding vibe, a strong digital synth pad in the back, a prominent bass line and the overall feeling of a hotel waiting room.",
+      "group": "SDD",
+      "audio": {
+        "baseline": "audio/sdd_160_baseline.wav",
+        "musicgen": "audio/sdd_160_musicgen.wav",
+        "ours": "audio/sdd_160_ours.wav"
+      }
+    },
+    {
+      "id": "attm_20",
+      "caption": "A beautiful house track featuring a smooth electric guitar, lush synth pads, and a steady four-on-the-floor beat, creating a warm, inviting atmosphere with a gentle groove and flowing melodies.",
+      "group": "ATTM",
+      "audio": {
+        "baseline": "audio/attm_20_baseline.wav",
+        "musicgen": "audio/attm_20_musicgen.wav",
+        "ours": "audio/attm_20_ours.wav"
+      }
+    },
+    {
+      "id": "attm_1",
+      "caption": "Atmospheric music featuring a soothing vibraphone, enhanced with gentle piano and ambient synth pads, evokes a calm, reflective mood with soft, resonant tones and a spacious, dreamy texture.",
+      "group": "ATTM",
+      "audio": {
+        "baseline": "audio/attm_1_baseline.wav",
+        "musicgen": "audio/attm_1_musicgen.wav",
+        "ours": "audio/attm_1_ours.wav"
+      }
+    },
+    {
+      "id": "attm_45",
+      "caption": "A fantasy soundtrack featuring an orchestra, evoking a magical and imaginative atmosphere through rich, sweeping melodies and orchestral textures.",
+      "group": "ATTM",
+      "audio": {
+        "baseline": "audio/attm_45_baseline.wav",
+        "musicgen": "audio/attm_45_musicgen.wav",
+        "ours": "audio/attm_45_ours.wav"
+      }
+    },
+    {
+      "id": "attm_7",
+      "caption": "A mysterious hardrock piece driven by taut strings, electrified guitar riffs, and a pulsing bass line, layered with crisp drum hits and a resonant electric guitar, creating an atmospheric, enigmatic tension that lingers in the shadows. The strings add a haunting, shimmering texture, enhancing the dark, unresolved mood with subtle vibrato and dynamic swells.",
+      "group": "ATTM",
+      "audio": {
+        "baseline": "audio/attm_7_baseline.wav",
+        "musicgen": "audio/attm_7_musicgen.wav",
+        "ours": "audio/attm_7_ours.wav"
+      }
+    },
+    {
+      "id": "attm_16",
+      "caption": "A smooth, nostalgic house track featuring warm Rhodes keys, a steady four-on-the-floor beat, and a subtle bassline, evoking the cinematic atmosphere of a classic film scene. The Rhodes provides a rich, analog texture, complemented by a clean drum machine and a soft, resonant synth pad, creating a timeless, emotionally resonant mood perfect for a film’s opening or pivotal moment.",
+      "group": "ATTM",
+      "audio": {
+        "baseline": "audio/attm_16_baseline.wav",
+        "musicgen": "audio/attm_16_musicgen.wav",
+        "ours": "audio/attm_16_ours.wav"
+      }
+    },
+    {
+      "id": "sdd_502",
+      "caption": "A pop-electro song from 00s with a very good use of panning and a very promising melodic line that is accompanied by power-chords. The syncopation between the power-chords and octave double up and the typical, straightforward back-beat is very catchy. Also the piano and electronic keyboard combination seems very natural. I would definetely need to hear the continuation after the build-up to the 2 minutes mark and can imagine myself dancing to this tune in a night back in 2008",
+      "group": "SDD",
+      "audio": {
+        "baseline": "audio/sdd_502_baseline.wav",
+        "musicgen": "audio/sdd_502_musicgen.wav",
+        "ours": "audio/sdd_502_ours.wav"
+      }
+    }
+  ]
+}
