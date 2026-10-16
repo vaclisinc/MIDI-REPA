@@ -46,7 +46,7 @@ Song-Ze Yu, Fang-Duo Tsai, Yi-Hsuan Yang
 ## Citation
 
 ```bibtex
-@misc{yu2026midirepaimprovingtexttomusicgeneration,
+@misc{yu2026midirepa,
       title={MIDI-REPA: Improving Text-to-Music Generation with Symbolic Representation Alignment},
       author={Song-Ze Yu and Fang-Duo Tsai and Yi-Hsuan Yang},
       year={2026},
