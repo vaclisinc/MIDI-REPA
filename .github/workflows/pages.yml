@@ -2,7 +2,7 @@ name: Deploy website
 
 on:
   push:
-    branches: [main]
+    branches: [demo]
   workflow_dispatch:
 
 permissions:
@@ -47,6 +47,9 @@ jobs:
                       header = audio.read(12)
                   assert header[:4] == b'RIFF' and header[8:12] == b'WAVE'
                   files.add(name)
+          for path in Path('assets').iterdir():
+              assert path.suffix in {'.webp', '.png', '.jpg'}, f'Unexpected asset {path}'
+              files.add(str(path))
           for name in sorted(files):
               target = Path('_site') / name
               target.parent.mkdir(parents=True, exist_ok=True)
