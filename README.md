@@ -4,16 +4,13 @@
 
 ### Improving Text-to-Music Generation with Symbolic Representation Alignment
 
-<span style="white-space:nowrap;">Song-Ze Yu</span>&nbsp;·
-<span style="white-space:nowrap;">Fang-Duo Tsai</span>&nbsp;·
-<span style="white-space:nowrap;">Yi-Hsuan Yang</span>
+Song-Ze Yu, Fang-Duo Tsai, Yi-Hsuan Yang
 
 <sub>National Taiwan University</sub>
 
 <br/>
 
 [![arXiv](https://img.shields.io/badge/arXiv-2610.20967-b31b1b.svg?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.20967)
-[![Demo](https://img.shields.io/badge/Demo-midi--repa.vaclis.net-862633.svg)](https://midi-repa.vaclis.net/)
 [![AMTFlow](https://img.shields.io/badge/AMTFlow-GitHub-181717.svg?logo=github&logoColor=white)](https://github.com/vaclisinc/AMTFlow)
 [![JamendoMIDI](https://img.shields.io/badge/JamendoMIDI-Hugging_Face-ffcc4d.svg?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/vaclis/JamendoMIDI)
 
@@ -45,3 +42,17 @@
     </td>
   </tr>
 </table>
+
+## Citation
+
+```bibtex
+@misc{yu2026midirepaimprovingtexttomusicgeneration,
+      title={MIDI-REPA: Improving Text-to-Music Generation with Symbolic Representation Alignment},
+      author={Song-Ze Yu and Fang-Duo Tsai and Yi-Hsuan Yang},
+      year={2026},
+      eprint={2610.20967},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      url={https://arxiv.org/abs/2610.20967},
+}
+```
