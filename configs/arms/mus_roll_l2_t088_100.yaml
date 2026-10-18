@@ -1,0 +1,3 @@
+# Table 5 (when): MuScriptor merged roll at L2, aligned only for t in [0.88, 1.0].
+run_name: mus_roll_l2_t088_100
+repa: {teacher: muscriptor_roll, layer: 2, t_min: 0.88, t_max: 1.0}

@@ -1,0 +1,65 @@
+# Shared settings of every arm in the paper (Sec. 2.2.3). An arm file under configs/arms/
+# overrides only what it studies: the symbolic target, the aligned block and the timestep
+# interval. Set data.root and output_dir on the command line.
+
+run_name: ???
+output_dir: runs/${run_name}
+seed: 14159265
+
+model: fluxaudio_s_same      # 121.6M parameters, 12 MMDiT blocks (L0-L3 joint, L4-L11 fused)
+use_rope: true
+
+data:
+  root: ???                  # written by `python -m midi_repa.prep`
+  manifests: manifests
+  latents: latents
+  text: text
+  teachers:
+    muscriptor_roll: teacher/muscriptor_roll
+    muscriptor_cube: teacher/muscriptor_cube
+    basic_pitch_roll: teacher/basic_pitch_roll
+  num_workers: 12
+  pin_memory: true
+
+assets:
+  latent_stats: assets/latent_stats     # per-channel SAME-L mean/std used by every arm
+  empty_string: assets/empty_string     # null-prompt T5/CLAP features for CFG (prep conditioning)
+
+repa:
+  enabled: true
+  teacher: muscriptor_roll   # muscriptor_roll | muscriptor_cube | basic_pitch_roll
+  layer: 2                   # global block index L0..L11
+  lambda: 0.5
+  t_min: 0.0                 # alignment interval T = [t_min, t_max]; t = 1 is noise
+  t_max: 1.0
+
+train:
+  batch_size: 128            # global; split evenly across GPUs
+  num_iterations: 300000
+  learning_rate: 1.0e-4
+  weight_decay: 1.0e-6
+  warmup_steps: 1000
+  lr_milestones: [240000, 270000]
+  lr_gamma: 0.1
+  clip_grad_norm: 1.0
+  amp: true                  # bf16 autocast
+  grad_scaler: true
+  null_condition_probability: 0.1
+  t_sampling: {mean: 0.0, scale: 1.0}   # t = sigmoid(u), u ~ N(mean, scale^2)
+  log_interval: 50
+  val_interval: 1000
+  checkpoint_interval: 5000
+
+ema:
+  sigma_rels: [0.05, 0.1]
+  checkpoint_every: 5000
+  output_sigma: 0.05         # the evaluated model
+
+sampling:
+  num_steps: 25              # Euler
+  cfg_strength: 4.5
+
+wandb:
+  enabled: false
+  project: midi-repa
+  entity: null

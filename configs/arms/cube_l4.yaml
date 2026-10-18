@@ -1,0 +1,3 @@
+# Table 1 (what): MuScriptor 7-instrument cube (flattened to 616 dims) at L4, full trajectory.
+run_name: cube_l4
+repa: {teacher: muscriptor_cube, layer: 4}

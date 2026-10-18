@@ -1,0 +1,3 @@
+# Table 1 (what): Basic Pitch roll at L4, full trajectory.
+run_name: bp_roll_l4
+repa: {teacher: basic_pitch_roll, layer: 4}

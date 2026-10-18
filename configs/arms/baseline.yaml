@@ -1,0 +1,4 @@
+# Baseline: identical training without MIDI-REPA (lambda = 0). Tables 1, 3, 4, 5; FoG-A (Table 2).
+run_name: baseline
+repa:
+  enabled: false

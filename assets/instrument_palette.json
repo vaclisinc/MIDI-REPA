@@ -1,0 +1,20 @@
+{
+  "palette": [
+    "drums",
+    "electric bass",
+    "clean electric guitar",
+    "acoustic piano",
+    "violin",
+    "synth pad",
+    "brass section"
+  ],
+  "name_to_class": {
+    "drums": "drums",
+    "electric bass": "electric bass",
+    "clean electric guitar": "clean electric guitar",
+    "acoustic piano": "acoustic piano",
+    "violin": "violin",
+    "synth pad": "synth pad",
+    "brass section": "brass section"
+  }
+}

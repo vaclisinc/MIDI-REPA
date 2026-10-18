@@ -1,0 +1,3 @@
+# Table 3 (where): MuScriptor merged roll at L5, full trajectory.
+run_name: mus_roll_l5
+repa: {teacher: muscriptor_roll, layer: 5}

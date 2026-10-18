@@ -1,0 +1,3 @@
+# Tables 3-5: MuScriptor merged roll at L2, t in [0, 1]. The final model (Table 4).
+run_name: mus_roll_l2
+repa: {teacher: muscriptor_roll, layer: 2}
