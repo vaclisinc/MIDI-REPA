@@ -209,8 +209,7 @@ We checked this code against the original research code and the paper's runs:
   the official scripts gives FAD 0.4975 and CLAP 0.3149 against 0.4973 and 0.3146; with the
   paper's cached reference embeddings the FAD matches to 1e-9. Rescoring the paper's ATTM
   clips with this CCS scorer gives the same Yes/No decision on all 30 questions tested,
-  with a median log-probability
-  difference of 0.03 (different GPU and CPU offloading).
+  with a median log-probability difference of 0.03 (different GPU and CPU offloading).
 
 ## License
 
